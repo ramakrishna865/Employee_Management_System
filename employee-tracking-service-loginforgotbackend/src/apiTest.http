@@ -1,0 +1,41 @@
+### Fetch all employees
+GET http://localhost:8080/api/employees
+
+### Fetch  employee based on ID
+GET http://localhost:8080/api/employees/2
+### Create a new employee
+POST http://localhost:8080/api/employees
+Content-Type: application/json
+
+{
+    "name": "Tahera",
+    "position": "Developer",
+    "department": "React",
+    "salary": 90000,
+    "dateOfBirth": "2001-09-19",
+    "dateOfJoining": "2010-12-02",
+    "active": true,
+    "gender": "Female",
+    "performanceScore": 8
+}
+### update 
+PUT http://localhost:8080/api/employees/7
+Content-Type: application/json
+
+{
+    "name": "Raha Mohammad",
+    "position": "Developer",
+    "department": "IT",
+    "salary": 350000,
+    "dateOfBirth": "2003-09-09",
+    "dateOfJoining": "2024-12-02",
+    "active": true,
+    "gender": "Female",
+    "performanceScore": 9.5
+}
+
+### delete 
+DELETE http://localhost:8080/api/employees/9
+
+###
+GET http://localhost:8080/api/employees/insights
